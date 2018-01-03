@@ -1,0 +1,71 @@
+&[id="3"] {
+  background-image: url($baseurl + '/assets/images/bg3.png');
+  .content {
+    align-items: center;
+  }
+
+  .left {
+    flex: 3;
+    padding-right: 0;
+  }
+
+  .right {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 5;
+    img {
+      max-width: 736px;
+      max-height: 703px;
+      height: 100%;
+    }
+
+  }
+
+  @media screen and (max-width: $ipad-horizontal) {
+    .left {
+      flex: 4;
+    }
+    
+    .right {
+      flex: 6;
+      img {
+        max-width: 428px;
+        max-height: 409px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $ipad) {
+    .left {
+      flex: 100%;
+      * {
+        width: 70%;
+      }
+    }
+    
+    .right {
+      flex: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    .left {
+      flex: 100%;
+      * {
+        width: 100%;
+      }
+    }
+    
+    .right {
+      flex: 100%;
+      justify-content: center;
+      img {
+        max-width: 380px;
+        max-height: 362px;
+      }
+    }
+  }
+}
