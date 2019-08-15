@@ -1,0 +1,51 @@
+&[id="4"] {
+
+  & > .content > h1 {
+    flex: 100%;
+  }
+
+  .content {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .left {
+    flex: 3;
+  }
+
+  .right {
+    flex: 5;
+
+    h3 {
+      font-family: 'IBMPlexSansRegular';
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: $ipad) {
+    .left {
+      flex: 100%;
+      padding-right: 0;
+    }
+
+    .right {
+      flex: 100%;
+      padding-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .right {
+      p {
+        &:not(:last-of-type) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

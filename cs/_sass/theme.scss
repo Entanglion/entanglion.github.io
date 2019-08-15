@@ -1,0 +1,65 @@
+$ipad-horizontal: 1024px;
+$ipad: 768px;
+$mobile: 550px;
+
+@import 'mixins/mixins';
+
+html, body {
+  margin: 0;
+}
+
+header {
+  background-color: #061689;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-family: 'IBMPlexMonoRegular';
+  font-size: 14px;
+}
+
+footer {
+  background-color: #80D3EF;
+  padding: 15px;
+  text-align: right;
+  font-family: 'IBMPlexSansRegular';
+
+  span {
+    font-family: 'IBMPlexSansSemiBold';
+  }
+}
+
+a {
+  color: #4DAAFA;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'IBMPlexSansRegular';
+  font-size: 40px;
+  
+  @media screen and (max-width: $ipad-horizontal) {
+    font-size: 30px;
+  }
+}
+
+p, h3 {
+  font-size: 20px;
+
+  @media screen and (max-width: $ipad-horizontal) {
+    font-size: 16px;
+  }
+}
+
+.not-found {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+@import 'layout/_home.scss';
