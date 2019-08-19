@@ -171,7 +171,7 @@ main section:last-of-type>div {
 }
 
 main section[id="1"] {
-    background-image: url("../assets/images/bg1.png")
+    background-image: url("../../assets/images/bg1.png")
 }
 
 main section[id="1"] .left {
@@ -264,7 +264,7 @@ main section[id="1"] .stats .stat p {
 }
 
 main section[id="2"] {
-    background-image: url("../assets/images/bg2.png");
+    background-image: url("../../assets/images/bg2.png");
     background-position-y: bottom;
     background-position-x: -30px;
     background-size: 1462px
@@ -293,7 +293,7 @@ main section[id="2"] .right {
 
 @media screen and (max-width: 768px) {
     main section[id="2"] {
-        background-image: url("../assets/images/bg2-reverse.png");
+        background-image: url("../../assets/images/bg2-reverse.png");
         background-position: right -100px bottom;
         background-size: 900px
     }
@@ -307,7 +307,7 @@ main section[id="2"] .right {
 
 @media screen and (max-width: 550px) {
     main section[id="2"] {
-        background-image: url("../assets/images/bg2-reverse.png");
+        background-image: url("../../assets/images/bg2-reverse.png");
         background-position: right -80px bottom;
         background-size: 700px
     }
@@ -323,7 +323,7 @@ main section[id="2"] .right {
 }
 
 main section[id="3"] {
-    background-image: url("../assets/images/bg3.png")
+    background-image: url("../../assets/images/bg3.png")
 }
 
 main section[id="3"] .content {
