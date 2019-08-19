@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'IBMPlexMonoRegular';
     src: url("../assets/fonts/IBMPlexMono/IBMPlexMono-Regular.woff")
@@ -28,6 +29,7 @@
     src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold-V01.1.woff")
 }
 
+
 html,
 body {
     margin: 0
@@ -38,7 +40,7 @@ header {
     color: white;
     padding: 15px;
     text-align: center;
-    font-family: 'IBMPlexMonoRegular';
+    font-family: 'IBMPlexMono', monospace;
     font-size: 14px
 }
 
@@ -46,11 +48,11 @@ footer {
     background-color: #80D3EF;
     padding: 15px;
     text-align: right;
-    font-family: 'IBMPlexSansRegular'
+    font-family: 'IBMPlexSans',sans-serif
 }
 
 footer span {
-    font-family: 'IBMPlexSansSemiBold'
+    font-family: 'IBMPlexSansSemiBold',sans-serif
 }
 
 a {
@@ -67,7 +69,7 @@ h6 {
 }
 
 h1 {
-    font-family: 'IBMPlexSansRegular';
+    font-family: 'IBMPlexSansRegular' , sans-serif;
     font-size: 40px
 }
 
@@ -102,7 +104,7 @@ main {
     min-height: calc(100vh - 98px);
     background-color: #131821;
     color: white;
-    font-family: 'IBMPlexSansExtraLight'
+    font-family: 'IBMPlexSansExtraLight',sans-serif
 }
 
 main section {
@@ -243,7 +245,7 @@ main section[id="1"] .stats .stat p {
 }
 
 main section[id="2"] {
-    background-image: url("/assets/images/bg2.png");
+    background-image: url("../assets/images/bg2.png");
     background-position-y: bottom;
     background-position-x: -30px;
     background-size: 1462px
@@ -272,7 +274,7 @@ main section[id="2"] .right {
 
 @media screen and (max-width: 768px) {
     main section[id="2"] {
-        background-image: url("/assets/images/bg2-reverse.png");
+        background-image: url("../assets/images/bg2-reverse.png");
         background-position: right -100px bottom;
         background-size: 900px
     }
@@ -286,7 +288,7 @@ main section[id="2"] .right {
 
 @media screen and (max-width: 550px) {
     main section[id="2"] {
-        background-image: url("/assets/images/bg2-reverse.png");
+        background-image: url("../assets/images/bg2-reverse.png");
         background-position: right -80px bottom;
         background-size: 700px
     }
@@ -302,7 +304,7 @@ main section[id="2"] .right {
 }
 
 main section[id="3"] {
-    background-image: url("/assets/images/bg3.png")
+    background-image: url("../assets/images/bg3.png")
 }
 
 main section[id="3"] .content {
@@ -389,7 +391,7 @@ main section[id="4"] .right {
 }
 
 main section[id="4"] .right h3 {
-    font-family: 'IBMPlexSansRegular';
+    font-family: 'IBMPlexSansRegular',sans-serif;
     margin-bottom: 0
 }
 
