@@ -62,4 +62,23 @@ p, h3 {
   padding-top: 50px;
 }
 
+.lang-switch-area {
+  position: absolute;
+  top: 2vh;
+  right: 5vw;
+}
+.lang-switch li {
+  display: inline-block;
+  padding: 3px;
+}
+.lang-switch li:hover {
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+
+.lang-switch li a img{
+  width: 35px;
+  height: auto;
+}
+
 @import 'layout/_home.scss';
