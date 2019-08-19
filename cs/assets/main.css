@@ -1,31 +1,31 @@
 @font-face {
     font-family: 'IBMPlexMonoRegular';
-    src: url("../assets/fonts/IBMPlexMono/IBMPlexMono-Regular.woff")
+    src: url("../../assets/fonts/IBMPlexMono/IBMPlexMono-Regular.woff")
 }
 
 @font-face {
     font-family: 'IBMPlexSansRegular';
-    src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Regular-V01.1.woff")
+    src: url("../../assets/fonts/IBMPlexSans/IBMPlexSans-Regular-V01.1.woff")
 }
 
 @font-face {
     font-family: 'IBMPlexSansMedium';
-    src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Medium-V01.1.woff")
+    src: url("../../assets/fonts/IBMPlexSans/IBMPlexSans-Medium-V01.1.woff")
 }
 
 @font-face {
     font-family: 'IBMPlexSansLight';
-    src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Light-V01.1.woff")
+    src: url("../../assets/fonts/IBMPlexSans/IBMPlexSans-Light-V01.1.woff")
 }
 
 @font-face {
     font-family: 'IBMPlexSansExtraLight';
-    src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-ExtraLight-V01.1.woff")
+    src: url("../../assets/fonts/IBMPlexSans/IBMPlexSans-ExtraLight-V01.1.woff")
 }
 
 @font-face {
     font-family: 'IBMPlexSansSemiBold';
-    src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold-V01.1.woff")
+    src: url("../../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold-V01.1.woff")
 }
 
 html,
