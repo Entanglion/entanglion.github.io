@@ -2,7 +2,30 @@ $ipad-horizontal: 1024px;
 $ipad: 768px;
 $mobile: 550px;
 
-@import 'mixins/mixins';
+@font-face {
+  font-family: 'IBMPlexMonoRegular';
+  src: url("../assets/fonts/IBMPlexMono/IBMPlexMono-Regular-Latin1.woff");
+}
+@font-face {
+  font-family: 'IBMPlexSansRegular';
+  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Regular-V01.1.woff");
+}
+@font-face {
+  font-family: 'IBMPlexSansMedium';
+  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Medium-V01.1.woff");
+}
+@font-face {
+  font-family: 'IBMPlexSansLight';
+  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Light-V01.1.woff");
+}
+@font-face {
+  font-family: 'IBMPlexSansExtraLight';
+  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-ExtraLight-V01.1.woff");
+}
+@font-face {
+  font-family: 'IBMPlexSansSemiBold';
+  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold-V01.1.woff");
+}
 
 html, body {
   margin: 0;
@@ -81,4 +104,333 @@ p, h3 {
   height: auto;
 }
 
-@import 'layout/_home.scss';
+main {
+  padding: 0 20px;
+  min-height: calc(100vh - 98px);
+  background-color: #131821;
+  color: white;
+  font-family: 'IBMPlexSansExtraLight';
+
+  section {
+    margin: auto -20px;
+    padding: 0 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .content {
+      padding: 30px;
+      border-bottom: 1px solid #3A3655;
+      display: flex;
+      flex-flow: row wrap;
+    
+      .left {
+        padding-right: 30px;
+      }
+      .right {
+        padding-left: 30px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &:last-of-type {
+      & > div {
+        border: none;
+      }
+    }
+
+    &:not(:first-of-type) {
+      @media screen and (max-width: $ipad) {
+        .content {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: $mobile) {
+      .content {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+   &[id="1"] {
+  background-image: url($baseurl + '/assets/images/bg1.png');
+
+  .left {
+    flex: 1;
+    padding-top: 100px;
+
+    img {
+      max-width: 900px;
+    }
+
+    .description {
+      margin: 50px 0 90px 0;
+      width: 70%;
+
+      h3 {
+        font-size: 25px;
+      }
+    }
+
+  }
+
+  .right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 386px;
+      max-height: 448px;
+    }
+  }
+
+  .stats {
+    display: flex;
+    flex: 100%;
+    padding-bottom: 60px; 
+
+    .stat {
+      display: flex;
+      flex-flow: column nowrap;
+      padding-right: 25px;
+      align-items: center;
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+
+      img {
+        width: 60px;
+      }
+
+      p {
+        color: #7DD3F1;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media screen and (max-width: $ipad-horizontal) {
+    .left {
+      .description {
+        width: 100%;
+        h3 {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .stats .stat img {
+      width: 50px;
+    }
+  }
+
+  @media screen and (max-width: $ipad) {
+    .left {
+      flex: 100%;
+      order: 2;
+      text-align: center;
+      padding-right: 0;
+      padding-top: 70px;
+    }
+    .right {
+      flex: 100%;
+      order: 1;
+      padding-left: 0;
+    }
+    .stats {
+      order: 3;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+&[id="2"] {
+  background-image: url($baseurl + '/assets/images/bg2.png');
+  background-position-y: bottom;
+  background-position-x: -30px;
+  background-size: 1462px;
+
+  .content {
+    min-height: 500px;
+    justify-content: flex-end;
+  }
+
+  .right {
+    padding: 0;
+    width: 40%;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (max-width: $ipad-horizontal) {
+    background-position-x: -100px;
+    background-size: 1100px;
+
+    .right {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: $ipad) {
+    background-image: url($baseurl + '/assets/images/bg2-reverse.png');
+    background-position: right -100px bottom;
+    background-size: 900px;
+
+    .content {
+      justify-content: flex-start;
+    }
+
+    .right {
+      width: 70%;
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    background-image: url($baseurl + '/assets/images/bg2-reverse.png');
+    background-position: right -80px bottom;
+    background-size: 700px;
+
+    .content {
+      justify-content: flex-start;
+      padding-left: 0;
+      padding-right: 0;
+      
+      .right {
+        width: 100%;
+        padding-bottom: 200px;
+      }
+    }
+  }
+}
+    &[id="3"] {
+  background-image: url($baseurl + '/assets/images/bg3.png');
+  .content {
+    align-items: center;
+  }
+
+  .left {
+    flex: 3;
+    padding-right: 0;
+  }
+
+  .right {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 5;
+    img {
+      max-width: 736px;
+      max-height: 703px;
+      height: 100%;
+    }
+
+  }
+
+  @media screen and (max-width: $ipad-horizontal) {
+    .left {
+      flex: 4;
+    }
+    
+    .right {
+      flex: 6;
+      img {
+        max-width: 428px;
+        max-height: 409px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $ipad) {
+    .left {
+      flex: 100%;
+      * {
+        width: 70%;
+      }
+    }
+    
+    .right {
+      flex: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    .left {
+      flex: 100%;
+      * {
+        width: 100%;
+      }
+    }
+    
+    .right {
+      flex: 100%;
+      justify-content: center;
+      img {
+        max-width: 380px;
+        max-height: 362px;
+      }
+    }
+  }
+}
+    &[id="4"] {
+
+  & > .content > h1 {
+    flex: 100%;
+  }
+
+  .content {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .left {
+    flex: 3;
+  }
+
+  .right {
+    flex: 5;
+
+    h3 {
+      font-family: 'IBMPlexSansRegular';
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: $ipad) {
+    .left {
+      flex: 100%;
+      padding-right: 0;
+    }
+
+    .right {
+      flex: 100%;
+      padding-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .right {
+      p {
+        &:not(:last-of-type) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}    
+  }
+}
