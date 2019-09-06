@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'IBMPlexMonoRegularCS';
+    src: url("../../assets/fonts/IBMPlexMono/IBMPlexMono-Regular.ttf")
+}
+
+@font-face {
     font-family: 'IBMPlexSansRegular';
     src: url("../../assets/fonts/IBMPlexSans/IBMPlexSans-Regular-V01.1.woff")
 }
@@ -359,6 +364,12 @@ main section[id="3"] .right img {
     main section[id="3"] .right img {
         max-width: 428px;
         max-height: 409px
+    }
+    .lang-switch-area {
+        position: relative;
+        top: 0vh;
+        right: 0;
+        padding: 0;
     }
 }
 
