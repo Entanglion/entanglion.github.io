@@ -75,6 +75,15 @@ p, h3 {
   }
 }
 
+@media screen and (max-width: 1024px){
+  .lang-switch-area {
+    position: relative;
+    top: 0vh;
+    right: 0;
+    padding: 0;
+  }
+
+}
 .not-found {
   display: flex;
   flex-flow: column wrap;
